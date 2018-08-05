@@ -1,0 +1,21 @@
+Options +MultiViews
+AddEncoding x-gzip .gz
+
+Header append Vary host
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^jeffsweb.nfshost.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots.txt$
+RewriteRule ^.*$ http://jeffsweb.net%{REQUEST_URI} [R=301,L]
+
+RewriteBase /scheduler
+
+RewriteRule ^.mysql.php$ - [F,L]
+
+RewriteRule ^s/([0-9]+)$ /scheduler/show_schedule.php?student_id=$1 [L]
+RewriteRule ^t/([0-9]+)$ /scheduler/show_schedule.php?teacher_id=$1 [L]
+RewriteRule ^x/([0-9]{4}-[0-9a-zA-Z]{6})$ /scheduler/show_schedule.php?course_id=$1 [L]
+RewriteRule ^e/([0-9]+)$ /scheduler/edit_schedule.php?student_id=$1 [L]
+RewriteRule ^c/([0-9]+)$ /scheduler/edit_class.php?class_id=$1 [QSA,L]
+RewriteRule ^a/$ /scheduler/edit_schedule.php [L]
+RewriteRule ^y/([0-9]+)$ /scheduler/?year=$1 [L]
+

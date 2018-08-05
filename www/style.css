@@ -1,0 +1,75 @@
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+	font-family: sans-serif;
+	font-size: small;
+}
+
+h1
+{
+	font-size: large;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+}
+
+h2
+{
+	font-size: medium;
+	font-weight: bold;
+	padding: 0px;
+	margin: 10px 10px 0px 10px;
+}
+
+h3
+{
+	font-weight: bold;
+	padding: 2px;
+	margin: 0px 5px 5px 20px;
+	border-bottom: solid #aaaaaa 1px;
+	width: 100%;
+}
+
+li
+{
+	margin: 0px;
+	padding: 0px 5px 0px 5px;
+	line-height: 1.2;
+}
+
+ul
+{
+	margin: 5px 10px 25px 40px;
+	padding: 2px;
+	list-style-type: square;
+}
+
+form.search_box
+{
+	margin: 10px;
+	display: inline;
+}
+
+div.search_box
+{
+	margin: 0px;
+	display: inline;
+}
+
+img
+{
+	border: 0px;
+}
+
+td.schedule,th.schedule
+{
+	padding: 5px;
+}
+
+html .fb_share_link { 
+	padding:2px 0 0 20px; 
+	height:16px; 
+	background:url(https://www.facebook.com/images/share/facebook_share_icon.gif?12:26981) no-repeat top left;
+}
