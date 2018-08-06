@@ -1,6 +1,3 @@
-Options +MultiViews
-AddEncoding x-gzip .gz
-
 Header append Vary host
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^jeffsweb.nfshost.com$ [NC]

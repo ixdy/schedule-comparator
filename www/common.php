@@ -39,7 +39,7 @@ if ($mime == "application/xhtml+xml") {
 <html>
  <head>
   <title>Schedule Comparator (<?=$year_str?>) - <?=$title?></title>
-  <link rel="stylesheet" type="text/css" href="/scheduler/style" />
+  <link rel="stylesheet" type="text/css" href="/scheduler/style.css" />
   <link rel="canonical" href="<?=$_url?>" />
   <meta name="title" content="Schedule Comparator (<?=$year_str?>) - <?=$title?>" />
   <meta name="description" content="<?php if ($student_name != "") echo "$student_name's schedule for the $year_str school year."; else echo "Schedule Comparator - scheduling information for TJHSST's $year_str school year."; ?>" />
